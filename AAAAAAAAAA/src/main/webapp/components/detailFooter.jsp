@@ -8,11 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .footerAllBoard{
-            width: 1080px;
-            margin: 0px auto;
-
-        }
+		.footerAllBoard{
+			margin: 50px;
+		}
         .footerAllBoard td{
             height: 34px;
             border-bottom: 1px solid #eeeeee;
@@ -23,7 +21,7 @@
             
         }
         .footerAllBoard{
-        	width:1080px;
+        	
         	position: relative;
         }
         .detailFooterMore{

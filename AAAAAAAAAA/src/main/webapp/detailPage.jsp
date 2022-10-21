@@ -11,11 +11,13 @@
     <script src="https://kit.fontawesome.com/5ae31fdf61.js" crossorigin="anonymous"></script>
     <style>
         .detailPageConatiner {
-            margin: 0px auto;
-            width: 1080px;
           	border: 1px solid #eeeeee;
           	padding:20px;
 
+        }
+        .bmainContainer{
+        	 margin: 0px auto;
+            width: 1080px;
         }
 
         .detailMain {
@@ -53,8 +55,7 @@
         }
 
         .detailFooter {
-            display: flex;
-            justify-content: space-between;
+
             margin-bottom:100px;
         }
 
@@ -122,11 +123,22 @@
             color: #8d8d8d;
             font-size: 1.1rem;
         }
+       .mainBoardContainer{
+        	width: 1080px;
+        	margin: 0px auto;
+        	padding: 20px;
+        	display: flex;
+        }
     </style>
 </head>
 
 <body>
 	<%@ include file = "./components/header.jsp" %>
+	<div class="mainBoardContainer">
+	<div >
+		<%@ include file = "./components/aside.jsp" %>
+	</div>
+	<div class="bmainContainer" style="flex-grow:1">
     <div class="detailPageConatiner">
         <div class="pageReplace">
             <a href="">이전글</a>
@@ -193,12 +205,15 @@
                     <button>글쓰기</button>
                     <button>수정</button>
                     <button>삭제</button>
+                    <button>목록</button>
                 </div>
-                <div><button>목록</button></div>
+                 <%@ include file = "./components/detailFooter.jsp" %>
             </div>
         </div>
     </div>
-  <%@ include file = "./components/detailFooter.jsp" %>
+    </div>
+    </div>
+ 
 </body>
 
 </html>
